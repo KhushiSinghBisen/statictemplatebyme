@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .navbar-brand{
+        margin-left: 200px;
+        letter-spacing: 3px;
+        font-size: 25px;
+    }
+    .collapse {
+        padding-inline: 10px;
+        margin-left: 40%;
+    }
+    .collapse a{
+      color: black;
+      font-size: 16px;
+    }
+    #img1{
+        width: 100%;
+        height: 600px;
+    }
+    .container1 h1{
+        font-family:'sans-serif';
+        color: white;
+        position: absolute;
+        margin-top: -25%;
+        margin-left: 40%;
+    }
+    .container1 h3{
+        font-family: 'sans-serif';
+        color: white;
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 30%;
+    }
+    #btn1{
+        width: 145px;
+        border-radius: 5px;
+        height: 40px;
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 35%;
+        border:1px solid white;
+        background-color: transparent;
+        color: white;
+    }
+    #btn2{
+        margin-top: -16.5%;
+        position: absolute;
+        margin-left: 55%;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        height: 40px;
+        width: 146px;
+        background-color: transparent;
+    }
+    .container2 h1{
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .container2 h3{
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+        text-align: center;
+        font-weight: 100;
+        margin-top: 30px;
+    }
+    .container3{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+    .container3 img{
+        margin-top: 50px;
+        border-radius: 60px;
+        background-color: #69b9ff;
+        width: 90px;
+        border: 10px solid #fff;
+        box-shadow: 0 0 0 1px #2e9dff;
+    }
+    .c3{
+        text-align: center;
+        height: 80%;
+        margin-top: 100px;
+        margin-inline:-190px ;
+        border: 1px solid #96bee088;
+        width: 300px;
+        height: 300px;
+    }
+    .c3 h3{
+        margin-top: 30px;
+        margin-left: 30px;
+        color: #676770;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+    }
+    .c3 p{
+        color: #93a6b7;
+        width: 295px;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+    .container4{
+        display: flex;
+        margin-top: 100px;
+        width: 100%;
+        height: 800px;
+        background-color: #192024;
+    }
+    .c4 h1{
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 5px;
+        position: absolute;
+        margin-top: 145px;
+        margin-left: 45%;
+        color: white;
+    }
+    .c4 h3{
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 5px;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 37%;
+        color: white;
+    }
+    .img1{
+        margin-left: 190px;
+    }
+    .img1 img{
+        margin-left: 100px;
+        margin-top: 300px;
+        width: 430px;
+        height: 287px;
+    }
+    .text1{
+        margin-left: 235px;
+        text-align: center;
+        width: 375px;
+        position: absolute;
+        color: white;
+        margin-top: 650px;
+    }
+    .text2{
+        margin-left: 745px;
+        text-align: center;
+        width: 364px;
+        position: absolute;
+        color: white;
+        margin-top: 650px;
+    }
+    .text1 h3{
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 5px;
+        margin-top: -50px;
+        margin-left: 130px;
+    }
+    .text1 p{
+        margin-left: 105px;
+    }
+    .text2 p{
+        margin-left: 160px;
+    }
+    .text2 h3{
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 5px;
+        margin-top: -50px;
+        margin-left: 170px;
+    }
+    .text1 button{
+        border-radius: 5px;
+        height: 40px;
+        background-color: transparent;
+        width: 150px;
+        border: 1px solid whitesmoke;
+        color: white;
+        margin-left: 130px;
+    }
+    .text2 button{
+        border-radius: 5px;
+        height: 40px;
+        background-color: transparent;
+        width: 150px;
+        border: 1px solid whitesmoke;
+        color: white;
+        margin-left: 170px;
+    }
+    .container5{
+        font-size: 25px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 100px;
+    }
+    .container5 h2{
+        font-weight: 100;
+    }
+    .container5 h4{
+        font-weight: 100;
+    }
+    .container5 button{
+        margin-top: 40px;
+        height: 40px;
+        width: 175px;
+        font-size: medium;
+        background-color: #2e80b6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .container6{
+        height: 800px;
+    }
+    .container6 img{
+        width: 60%;
+        margin-left: 21%;
+        margin-top: 10px;
+    }
+    .container6 h3{
+        margin-top: 50px;
+        width: 227px;
+        margin-inline: 42%;
+        text-align: center;
+        font-weight: 100;
+
+    }
+    .container6 p{
+        margin-top: 20px;
+        width: 65%;
+        margin-inline: 19%;
+        text-align: center; 
+        font-weight: 100;
+    }
+    .footer{
+        width: 100%;
+        height: 300px;
+        background-color:  rgb(194, 192, 192);
+        justify-content: space-around;
+        display: flex;
+        padding-top: 30px;
+    }
+    .foot1{
+        width: 33.33%;
+    }
+    .foot1 p{
+        margin-left: 150px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .foot1 h1{
+        margin-left: 150px;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: 100;
+        width: 300px;
+        margin-top: 30px;
+    }
+    .foot2{
+        width: 33.33%;
+    }
+    .foot2 h1{
+        margin-left: -165px;
+        letter-spacing: 4px;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: 100;
+        width: 300px;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .foot2 ul{
+        list-style: none;
+        margin-top: 20px; 
+    }
+    .foot2 li{
+        margin-left: 60px;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: 100;
+        width: 300px;
+       
+    }
+    .foot2 a{
+        text-decoration: none;
+        color: rgb(0 140 255 / 84%);
+    }
+    .foot3{
+        width: 33.33%;
+    }
+    .foot3 h3{
+        margin-left: 200px;
+        letter-spacing: 4px;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: 100;
+        width: 300px;
+        margin-top: 30px;
+    }
+    .fafa{
+        margin-left: 200px;
+    }
+    .fafa i{
+        width: 25px;
+    }
+    .foot3 ul{
+        list-style: none;
+        margin-top: 60px;
+    }
+    .fafa li{
+        text-decoration: none;
+        list-style: none;
+        font-family: system-ui;
+        font-weight: 100;
+    }
+    .fafa a{
+        text-decoration: none;
+    }
+    .footer-text{
+        height: 50px;
+        color: white;
+        background-color: rgb(141, 140, 140);
+        text-align: center;
+        padding-top: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand  ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">VELOCITY</a>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+    <div class="container1">
+        <img id="img1" src="https://images.unsplash.com/photo-1456428724429-eb66a4859779?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h1>THIS IS IMAGE</h1>
+        <h3>A FREE RESPONSIVE TEMPLATE BY KHUSHI</h3>
+        <div class="btn">
+        <a href=""><button id="btn1">SIGN UP</button></a>
+        <a href=""><button id="btn2">LEARN MORE</BUtton></a>
+        </div>
+    </div>
+    <div class="container2">
+        <h1>WHAT WE DO</h1>
+        <H3>THIS IS SOME TEXT INSIDE DIV BLOCK</H3>
+    </div>
+    <div class="container3">
+        <div class="c3">
+            <img src="https://assets.website-files.com/5e4b18feebfd1a721bb930e6/5e4b18feebfd1a6bf8b930f3_feather-15-white.svg" alt="">
+            <h3>GRAPHIC DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam itaque necessitatibus laudantium quas ipsa voluptatum!</p>
+        </div>
+        <div class="c3">
+            <img src="https://assets.website-files.com/5e4b18feebfd1a721bb930e6/5e4b18feebfd1abad7b93103_feather2-17-white.svg" alt="">
+            <h3>AWESOME CODE</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi eveniet cupiditate itaque culpa delectus non?</p>
+        </div>
+        <div class="c3">
+            <img src="https://assets.website-files.com/5e4b18feebfd1a721bb930e6/5e4b18feebfd1aa9b8b9312b_feather2-22-white.svg" alt="">
+            <h3>FREE TEMPLATE</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, cumque ipsum? Odit iste ratione exercitationem!</p>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="c4">
+            <h1>SERVICES</h1>
+            <h3>THIS IS SOME TEXT INSIDE A DIV BLOCK</h3>
+        </div>
+        <div class="img1">
+            <img src="https://assets.website-files.com/5e4b18feebfd1a721bb930e6/5e4b18feebfd1acb41b9310a_city-scape-p-500x334.jpeg" alt="">
+            <img src="https://assets.website-files.com/5e4b18feebfd1a721bb930e6/5e4b18feebfd1ab359b9312c_photo-1416400639808-f41f0c149b09-p-1080x721.jpeg" alt="">
+        </div>
+        <div class="text1">
+            <h3>SERVICE 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum!</p>
+            <a href=""><button>Learn More</button></a>
+        </div>
+        <div class="text2">
+            <h3>SERVICE 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, recusandae.</p>
+            <a href=""><button>Learn More</button></a>
+        </div>
+    </div>
+    <div class="container5">
+        <h2>TAB SECTION</h2>
+        <h4>THIS IS SOME TEXT INSIDE OF A DIV BLOCK</h4>
+        <a href=""><button>TAB BUTTON 1</button></a>
+        <a href=""><button>TAB BUTTON 2</button></a>
+        <a href=""><button>TAB BUTTON 3</button></a>
+    </div>
+    <div class="container6">
+        <img src="https://assets.website-files.com/5e4b18feebfd1a721bb930e6/5e4b18feebfd1a316cb93127_photo-1422222948315-28aadb7a2cb8-p-1080x721.jpeg" alt="">
+        <h3>SOME TITLE HERE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, rem? Iusto sit tenetur laudantium labore, expedita aliquam quae unde dolorum maiores sint ea quod possimus quasi, et, ipsum obcaecati recusandae?</p>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="foot1">
+                <h1>ABOUT TEMPLATE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci perspiciatis temporibus. Amet iste corporis velit dolores quaerat, consectetur adipisci.</p>
+            </div>
+            <div class="foot2">
+                <h1>Useful Links</h1>
+                    <ul>
+                        <a href=""><li>Lorem ipsum dolor sit amet.</li></a>
+                        <a href=""><li>Lorem ipsum dolor sit amet.</li></a>
+                        <a href=""><li>Lorem ipsum dolor sit amet.</li></a>
+                        <a href=""><li>Lorem ipsum dolor sit amet consectetur.</li></a>
+                    </ul>
+            </div>
+            <div class="foot3">
+                <h3>SOCIAL</h3>
+                <div class="fafa">
+                <li><a href=""><i style="font-size:18px" class="fa">&#xf099;</i> Twitter</a></li>
+                <li><a href=""><i style="font-size:18px" class="fa">&#xf09a;</i> Facebook</a></li>
+                <li><a href=""><i style="font-size:18px" class="fa">&#xf0d2;</i> Pintrest</a></li>
+                <li><a href=""><i style="font-size:18px" class="fa">&#xf1a0;</i> Google</a></li>
+                <li><a href=""><i style="font-size:18px" class="fa">&#xf16d;</i> Instagram</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">Copyright@KhushiSingh</div>
+    </footer>
+</body>
+</html>
